@@ -11,12 +11,20 @@ set -e
 #
 ##################################################################################################################
 
+echo "################################################################"
+echo "#########            obmenu-generator            ################"
+echo "################################################################"
 
 
-echo "NOT APPLICABLE HERE "
-echo "Shortcuts are in Openbox file"
+
+[ -d $HOME"/.config/obmenu-generator" ] || mkdir -p $HOME"/.config/obmenu-generator"
+
+cp -r settings/obmenu-generator/ ~/.config/
+
+
+
 
 echo "################################################################"
-echo "#########       keyboard shortcuts set          ################"
+echo "######    obmenu-generator  config installed    ################"
 echo "################################################################"
 

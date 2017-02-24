@@ -12,11 +12,16 @@ set -e
 ##################################################################################################################
 
 
+echo "Copy/pasting settings.ini to .config/gtk-3.0"
 
-echo "NOT APPLICABLE HERE "
-echo "Shortcuts are in Openbox file"
+cp settings/themes/settings.ini ~/.config/gtk-3.0/
+
+echo "Copy/pasting gtkrc-2 to home folder"
+
+cp settings/themes/.gtkrc-2.0 ~/
+
 
 echo "################################################################"
-echo "#########       keyboard shortcuts set          ################"
+echo "#########     theme settings have been copied   ################"
 echo "################################################################"
 

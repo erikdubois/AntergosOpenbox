@@ -11,12 +11,13 @@ set -e
 #
 ##################################################################################################################
 
-
-
-echo "NOT APPLICABLE HERE "
-echo "Shortcuts are in Openbox file"
-
 echo "################################################################"
-echo "#########       keyboard shortcuts set          ################"
+echo "#########        Creating folders               ################"
 echo "################################################################"
 
+[ -d $HOME"/.config/openbox" ] || mkdir -p $HOME"/.config/openbox"
+[ -d $HOME"/.config/obmenu-generator" ] || mkdir -p $HOME"/.config/obmenu-generator"
+
+echo "################################################################"
+echo "#########            folders created            ################"
+echo "################################################################"

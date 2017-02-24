@@ -27,10 +27,14 @@ compton --config ~/.config/openbox/compton.conf &
 plank &
 
 # xfce4 panel
-xfce4-panel &
+#xfce4-panel &
+
+tint2 &
 
 ## GNOME PolicyKit authentication
-/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+#/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
+lxpolkit &
 
 # setting azerty
 setxkbmap -model pc101 -layout be

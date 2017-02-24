@@ -13,10 +13,11 @@ set -e
 
 
 
-echo "NOT APPLICABLE HERE "
-echo "Shortcuts are in Openbox file"
+cp -rf settings/plank ~/.config/
+
+
 
 echo "################################################################"
-echo "#########       keyboard shortcuts set          ################"
+echo "#########           files copied                ################"
 echo "################################################################"
 
