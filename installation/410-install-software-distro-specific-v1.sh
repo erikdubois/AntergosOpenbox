@@ -15,105 +15,90 @@ echo "################################################################"
 echo "#########   distro specific software installed  ################"
 echo "################################################################"
 
-#Fonts
 
-## sudo pacman -S ttf-ubuntu-font-family --noconfirm --needed conflicts with ttf-google-fonts
-## sudo pacman -S ttf-droid --noconfirm --noconfirm --needed  conflicts with ttf-google-fonts
-## sudo pacman -S ttf-inconsolata --noconfirm --needed        conflicts with ttf-google-fonts
-sudo pacman -S noto-fonts --noconfirm --needed
-
-#file manager
-
-#sudo pacman -S nemo nemo-share nemo-fileroller --noconfirm --needed
-
-# extra extensions to compare files if needed install it
-# packer -S nemo-compare
-
-# openbox - pacman
-
-sudo pacman -S obmenu --needed --noconfirm
-sudo pacman -S notify-osd --needed --noconfirm
+#sudo pacman -S obmenu --needed --noconfirm
+#sudo pacman -S notify-osd --needed --noconfirm
 
 
-echo "################################################################"
-echo "obconf"   
-echo "################################################################"
+# echo "################################################################"
+# echo "obconf"   
+# echo "################################################################"
 
 
-package="obconf"
+# package="obconf"
 
-#----------------------------------------------------------------------------------
+# #----------------------------------------------------------------------------------
 
-#checking if application is already installed or else install with aur helpers
-if pacman -Qi $package &> /dev/null; then
+# #checking if application is already installed or else install with aur helpers
+# if pacman -Qi $package &> /dev/null; then
 
-	echo "################################################################"
-	echo "################## "$package" is already installed"
-	echo "################################################################"
+# 	echo "################################################################"
+# 	echo "################## "$package" is already installed"
+# 	echo "################################################################"
 
-else
+# else
 
-	#checking which helper is installed
-	if pacman -Qi packer &> /dev/null; then
+# 	#checking which helper is installed
+# 	if pacman -Qi packer &> /dev/null; then
 
-		echo "Installing with packer"
-		packer -S --noconfirm --noedit  $package
+# 		echo "Installing with packer"
+# 		packer -S --noconfirm --noedit  $package
 
-	elif pacman -Qi pacaur &> /dev/null; then
+# 	elif pacman -Qi pacaur &> /dev/null; then
 		
-		echo "Installing with pacaur"
-		pacaur -S --noconfirm --noedit  $package
+# 		echo "Installing with pacaur"
+# 		pacaur -S --noconfirm --noedit  $package
 		 	
-	elif pacman -Qi yaourt &> /dev/null; then
+# 	elif pacman -Qi yaourt &> /dev/null; then
 
-		echo "Installing with yaourt"
-		yaourt -S --noconfirm $package
+# 		echo "Installing with yaourt"
+# 		yaourt -S --noconfirm $package
 			  	
-	fi
+# 	fi
 
 
-fi
+# fi
 
 
 
-echo "################################################################"
-echo "lxappearance-obconf"   
-echo "################################################################"
+# echo "################################################################"
+# echo "lxappearance-obconf"   
+# echo "################################################################"
 
 
-package="lxappearance-obconf"
+# package="lxappearance-obconf"
 
-#----------------------------------------------------------------------------------
+# #----------------------------------------------------------------------------------
 
-#checking if application is already installed or else install with aur helpers
-if pacman -Qi $package &> /dev/null; then
+# #checking if application is already installed or else install with aur helpers
+# if pacman -Qi $package &> /dev/null; then
 
-	echo "################################################################"
-	echo "################## "$package" is already installed"
-	echo "################################################################"
+# 	echo "################################################################"
+# 	echo "################## "$package" is already installed"
+# 	echo "################################################################"
 
-else
+# else
 
-	#checking which helper is installed
-	if pacman -Qi packer &> /dev/null; then
+# 	#checking which helper is installed
+# 	if pacman -Qi packer &> /dev/null; then
 
-		echo "Installing with packer"
-		packer -S --noconfirm --noedit  $package
+# 		echo "Installing with packer"
+# 		packer -S --noconfirm --noedit  $package
 
-	elif pacman -Qi pacaur &> /dev/null; then
+# 	elif pacman -Qi pacaur &> /dev/null; then
 		
-		echo "Installing with pacaur"
-		pacaur -S --noconfirm --noedit  $package
+# 		echo "Installing with pacaur"
+# 		pacaur -S --noconfirm --noedit  $package
 		 	
-	elif pacman -Qi yaourt &> /dev/null; then
+# 	elif pacman -Qi yaourt &> /dev/null; then
 
-		echo "Installing with yaourt"
-		yaourt -S --noconfirm $package
+# 		echo "Installing with yaourt"
+# 		yaourt -S --noconfirm $package
 			  	
-	fi
+# 	fi
 
 
-fi
+# fi
 
 
 
@@ -162,210 +147,210 @@ fi
 
 
 
-echo "################################################################"
-echo "obkey"   
-echo "################################################################"
+# echo "################################################################"
+# echo "obkey"   
+# echo "################################################################"
 
 
-package="obkey"
+# package="obkey"
 
-#----------------------------------------------------------------------------------
+# #----------------------------------------------------------------------------------
 
-#checking if application is already installed or else install with aur helpers
-if pacman -Qi $package &> /dev/null; then
+# #checking if application is already installed or else install with aur helpers
+# if pacman -Qi $package &> /dev/null; then
 
-	echo "################################################################"
-	echo "################## "$package" is already installed"
-	echo "################################################################"
+# 	echo "################################################################"
+# 	echo "################## "$package" is already installed"
+# 	echo "################################################################"
 
-else
+# else
 
-	#checking which helper is installed
-	if pacman -Qi packer &> /dev/null; then
+# 	#checking which helper is installed
+# 	if pacman -Qi packer &> /dev/null; then
 
-		echo "Installing with packer"
-		packer -S --noconfirm --noedit  $package
+# 		echo "Installing with packer"
+# 		packer -S --noconfirm --noedit  $package
 
-	elif pacman -Qi pacaur &> /dev/null; then
+# 	elif pacman -Qi pacaur &> /dev/null; then
 		
-		echo "Installing with pacaur"
-		pacaur -S --noconfirm --noedit  $package
+# 		echo "Installing with pacaur"
+# 		pacaur -S --noconfirm --noedit  $package
 		 	
-	elif pacman -Qi yaourt &> /dev/null; then
+# 	elif pacman -Qi yaourt &> /dev/null; then
 
-		echo "Installing with yaourt"
-		yaourt -S --noconfirm $package
+# 		echo "Installing with yaourt"
+# 		yaourt -S --noconfirm $package
 			  	
-	fi
+# 	fi
 
 
-fi
+# fi
 
 
 
 
-echo "################################################################"
-echo "ob-autostart"   
-echo "################################################################"
+# echo "################################################################"
+# echo "ob-autostart"   
+# echo "################################################################"
 
 
-package="ob-autostart"
+# package="ob-autostart"
 
-#----------------------------------------------------------------------------------
+# #----------------------------------------------------------------------------------
 
-#checking if application is already installed or else install with aur helpers
-if pacman -Qi $package &> /dev/null; then
+# #checking if application is already installed or else install with aur helpers
+# if pacman -Qi $package &> /dev/null; then
 
-	echo "################################################################"
-	echo "################## "$package" is already installed"
-	echo "################################################################"
+# 	echo "################################################################"
+# 	echo "################## "$package" is already installed"
+# 	echo "################################################################"
 
-else
+# else
 
-	#checking which helper is installed
-	if pacman -Qi packer &> /dev/null; then
+# 	#checking which helper is installed
+# 	if pacman -Qi packer &> /dev/null; then
 
-		echo "Installing with packer"
-		packer -S --noconfirm --noedit  $package
+# 		echo "Installing with packer"
+# 		packer -S --noconfirm --noedit  $package
 
-	elif pacman -Qi pacaur &> /dev/null; then
+# 	elif pacman -Qi pacaur &> /dev/null; then
 		
-		echo "Installing with pacaur"
-		pacaur -S --noconfirm --noedit  $package
+# 		echo "Installing with pacaur"
+# 		pacaur -S --noconfirm --noedit  $package
 		 	
-	elif pacman -Qi yaourt &> /dev/null; then
+# 	elif pacman -Qi yaourt &> /dev/null; then
 
-		echo "Installing with yaourt"
-		yaourt -S --noconfirm $package
+# 		echo "Installing with yaourt"
+# 		yaourt -S --noconfirm $package
 			  	
-	fi
+# 	fi
 
 
-fi
+# fi
 
 
-echo "################################################################"
-echo "nitrogen"   
-echo "################################################################"
+# echo "################################################################"
+# echo "nitrogen"   
+# echo "################################################################"
 
 
-package="nitrogen"
+# package="nitrogen"
 
-#----------------------------------------------------------------------------------
+# #----------------------------------------------------------------------------------
 
-#checking if application is already installed or else install with aur helpers
-if pacman -Qi $package &> /dev/null; then
+# #checking if application is already installed or else install with aur helpers
+# if pacman -Qi $package &> /dev/null; then
 
-	echo "################################################################"
-	echo "################## "$package" is already installed"
-	echo "################################################################"
+# 	echo "################################################################"
+# 	echo "################## "$package" is already installed"
+# 	echo "################################################################"
 
-else
+# else
 
-	#checking which helper is installed
-	if pacman -Qi packer &> /dev/null; then
+# 	#checking which helper is installed
+# 	if pacman -Qi packer &> /dev/null; then
 
-		echo "Installing with packer"
-		packer -S --noconfirm --noedit  $package
+# 		echo "Installing with packer"
+# 		packer -S --noconfirm --noedit  $package
 
-	elif pacman -Qi pacaur &> /dev/null; then
+# 	elif pacman -Qi pacaur &> /dev/null; then
 		
-		echo "Installing with pacaur"
-		pacaur -S --noconfirm --noedit  $package
+# 		echo "Installing with pacaur"
+# 		pacaur -S --noconfirm --noedit  $package
 		 	
-	elif pacman -Qi yaourt &> /dev/null; then
+# 	elif pacman -Qi yaourt &> /dev/null; then
 
-		echo "Installing with yaourt"
-		yaourt -S --noconfirm $package
+# 		echo "Installing with yaourt"
+# 		yaourt -S --noconfirm $package
 			  	
-	fi
+# 	fi
 
 
-fi
+# fi
 
 
 
-echo "################################################################"
-echo "feh"   
-echo "################################################################"
+# echo "################################################################"
+# echo "feh"   
+# echo "################################################################"
 
 
-package="feh"
+# package="feh"
 
-#----------------------------------------------------------------------------------
+# #----------------------------------------------------------------------------------
 
-#checking if application is already installed or else install with aur helpers
-if pacman -Qi $package &> /dev/null; then
+# #checking if application is already installed or else install with aur helpers
+# if pacman -Qi $package &> /dev/null; then
 
-	echo "################################################################"
-	echo "################## "$package" is already installed"
-	echo "################################################################"
+# 	echo "################################################################"
+# 	echo "################## "$package" is already installed"
+# 	echo "################################################################"
 
-else
+# else
 
-	#checking which helper is installed
-	if pacman -Qi packer &> /dev/null; then
+# 	#checking which helper is installed
+# 	if pacman -Qi packer &> /dev/null; then
 
-		echo "Installing with packer"
-		packer -S --noconfirm --noedit  $package
+# 		echo "Installing with packer"
+# 		packer -S --noconfirm --noedit  $package
 
-	elif pacman -Qi pacaur &> /dev/null; then
+# 	elif pacman -Qi pacaur &> /dev/null; then
 		
-		echo "Installing with pacaur"
-		pacaur -S --noconfirm --noedit  $package
+# 		echo "Installing with pacaur"
+# 		pacaur -S --noconfirm --noedit  $package
 		 	
-	elif pacman -Qi yaourt &> /dev/null; then
+# 	elif pacman -Qi yaourt &> /dev/null; then
 
-		echo "Installing with yaourt"
-		yaourt -S --noconfirm $package
+# 		echo "Installing with yaourt"
+# 		yaourt -S --noconfirm $package
 			  	
-	fi
+# 	fi
 
 
-fi
+# fi
 
 
 
 
 
-echo "################################################################"
-echo "menumaker"   
-echo "################################################################"
+# echo "################################################################"
+# echo "menumaker"   
+# echo "################################################################"
 
 
-package="menumaker"
+# package="menumaker"
 
-#----------------------------------------------------------------------------------
+# #----------------------------------------------------------------------------------
 
-#checking if application is already installed or else install with aur helpers
-if pacman -Qi $package &> /dev/null; then
+# #checking if application is already installed or else install with aur helpers
+# if pacman -Qi $package &> /dev/null; then
 
-	echo "################################################################"
-	echo "################## "$package" is already installed"
-	echo "################################################################"
+# 	echo "################################################################"
+# 	echo "################## "$package" is already installed"
+# 	echo "################################################################"
 
-else
+# else
 
-	#checking which helper is installed
-	if pacman -Qi packer &> /dev/null; then
+# 	#checking which helper is installed
+# 	if pacman -Qi packer &> /dev/null; then
 
-		echo "Installing with packer"
-		packer -S --noconfirm --noedit  $package
+# 		echo "Installing with packer"
+# 		packer -S --noconfirm --noedit  $package
 
-	elif pacman -Qi pacaur &> /dev/null; then
+# 	elif pacman -Qi pacaur &> /dev/null; then
 		
-		echo "Installing with pacaur"
-		pacaur -S --noconfirm --noedit  $package
+# 		echo "Installing with pacaur"
+# 		pacaur -S --noconfirm --noedit  $package
 		 	
-	elif pacman -Qi yaourt &> /dev/null; then
+# 	elif pacman -Qi yaourt &> /dev/null; then
 
-		echo "Installing with yaourt"
-		yaourt -S --noconfirm $package
+# 		echo "Installing with yaourt"
+# 		yaourt -S --noconfirm $package
 			  	
-	fi
+# 	fi
 
 
-fi
+# fi
 
 
 
@@ -410,87 +395,87 @@ else
 fi
 
 
-echo "################################################################"
-echo "gmrun"   
-echo "################################################################"
+# echo "################################################################"
+# echo "gmrun"   
+# echo "################################################################"
 
 
-package="gmrun"
+# package="gmrun"
 
-#----------------------------------------------------------------------------------
+# #----------------------------------------------------------------------------------
 
-#checking if application is already installed or else install with aur helpers
-if pacman -Qi $package &> /dev/null; then
+# #checking if application is already installed or else install with aur helpers
+# if pacman -Qi $package &> /dev/null; then
 
-	echo "################################################################"
-	echo "################## "$package" is already installed"
-	echo "################################################################"
+# 	echo "################################################################"
+# 	echo "################## "$package" is already installed"
+# 	echo "################################################################"
 
-else
+# else
 
-	#checking which helper is installed
-	if pacman -Qi packer &> /dev/null; then
+# 	#checking which helper is installed
+# 	if pacman -Qi packer &> /dev/null; then
 
-		echo "Installing with packer"
-		packer -S --noconfirm --noedit  $package
+# 		echo "Installing with packer"
+# 		packer -S --noconfirm --noedit  $package
 
-	elif pacman -Qi pacaur &> /dev/null; then
+# 	elif pacman -Qi pacaur &> /dev/null; then
 		
-		echo "Installing with pacaur"
-		pacaur -S --noconfirm --noedit  $package
+# 		echo "Installing with pacaur"
+# 		pacaur -S --noconfirm --noedit  $package
 		 	
-	elif pacman -Qi yaourt &> /dev/null; then
+# 	elif pacman -Qi yaourt &> /dev/null; then
 
-		echo "Installing with yaourt"
-		yaourt -S --noconfirm $package
+# 		echo "Installing with yaourt"
+# 		yaourt -S --noconfirm $package
 			  	
-	fi
+# 	fi
 
 
-fi
+# fi
+
+
+# was not installed in Antergos
+
+# echo "################################################################"
+# echo "archlinux-xdg-menu"   
+# echo "################################################################"
 
 
 
+# package="archlinux-xdg-menu"
 
-echo "################################################################"
-echo "archlinux-xdg-menu"   
-echo "################################################################"
+# #----------------------------------------------------------------------------------
 
+# #checking if application is already installed or else install with aur helpers
+# if pacman -Qi $package &> /dev/null; then
 
+# 	echo "################################################################"
+# 	echo "################## "$package" is already installed"
+# 	echo "################################################################"
 
-package="archlinux-xdg-menu"
+# else
 
-#----------------------------------------------------------------------------------
+# 	#checking which helper is installed
+# 	if pacman -Qi packer &> /dev/null; then
 
-#checking if application is already installed or else install with aur helpers
-if pacman -Qi $package &> /dev/null; then
+# 		echo "Installing with packer"
+# 		packer -S --noconfirm --noedit  $package
 
-	echo "################################################################"
-	echo "################## "$package" is already installed"
-	echo "################################################################"
-
-else
-
-	#checking which helper is installed
-	if pacman -Qi packer &> /dev/null; then
-
-		echo "Installing with packer"
-		packer -S --noconfirm --noedit  $package
-
-	elif pacman -Qi pacaur &> /dev/null; then
+# 	elif pacman -Qi pacaur &> /dev/null; then
 		
-		echo "Installing with pacaur"
-		pacaur -S --noconfirm --noedit  $package
+# 		echo "Installing with pacaur"
+# 		pacaur -S --noconfirm --noedit  $package
 		 	
-	elif pacman -Qi yaourt &> /dev/null; then
+# 	elif pacman -Qi yaourt &> /dev/null; then
 
-		echo "Installing with yaourt"
-		yaourt -S --noconfirm $package
+# 		echo "Installing with yaourt"
+# 		yaourt -S --noconfirm $package
 			  	
-	fi
+# 	fi
 
 
-fi
+# fi
 
 
 
