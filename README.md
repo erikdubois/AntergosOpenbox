@@ -19,10 +19,9 @@ Let us first take a screenshot of the initial look of this distro.
 
 # What can you achieve?
 
-![Screenshots](http://i.imgur.com/jx9aceG.jpg)
+![Screenshots](http://i.imgur.com/o4K47ys.png)
 
 
-![Screenshots](http://i.imgur.com/orpjYMt.jpg)
 
 ##Software installation
 
