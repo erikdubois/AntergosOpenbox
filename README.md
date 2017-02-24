@@ -193,7 +193,7 @@ use the git clone command
 # Youtube Resources Antergos Openbox
 
 
-https://www.youtube.com/playlist?list=PLlloYVGq5pS7Tb7PZ5eVkEWGj9UimJ5x6
+https://www.youtube.com/playlist?list=PLlloYVGq5pS4TgjFWxH07oIoFiCTuz3GW
 
 
 # Youtube Resources all Antergos
