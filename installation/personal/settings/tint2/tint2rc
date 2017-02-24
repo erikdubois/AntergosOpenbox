@@ -8,7 +8,7 @@
 rounded = 0
 border_width = 1
 background_color = #2d2d2d 60
-border_color = #2d2d2d 18
+border_color = #2d2d2d 10
 
 rounded = 0
 border_width = 0
@@ -26,7 +26,7 @@ border_color = #ffffff 70
 panel_monitor = all
 panel_position = top center horizontal
 panel_size = 100% 30
-panel_margin = 0 0
+panel_margin = 0 -2
 panel_padding = 2 0
 font_shadow = 0
 panel_background_id = 1
@@ -51,7 +51,7 @@ task_text = 1
 task_maximum_size = 140 35
 task_centered = 1
 task_padding = 6 3
-task_font = sans 7
+task_font = noto sans regular 11
 task_font_color = #ffffff 70
 task_background_id = 3
 task_icon_asb = 100 0 0
@@ -79,9 +79,9 @@ systray_icon_asb = 100 0 0
 # CLOCK
 #---------------------------------------------
 time1_format = %H:%M
-time1_font = sans 8
+time1_font = noto sans regular 8
 time2_format = %A %d %B
-time2_font = sans 6
+time2_font = noto sans regular 8
 clock_font_color = #ffffff 76
 clock_padding = 1 0
 clock_background_id = 0
@@ -99,8 +99,8 @@ battery = 0
 battery_hide = 98
 battery_low_status = 10
 battery_low_cmd = notify-send "battery low"
-bat1_font = sans 8
-bat2_font = sans 6
+bat1_font = noto sans regular 11
+bat2_font = noto sans regular 11
 battery_font_color = #ffffff 76
 battery_padding = 1 0
 battery_background_id = 0
@@ -114,7 +114,7 @@ tooltip_show_timeout = 0.7
 tooltip_hide_timeout = 0.3
 tooltip_background_id = 1
 tooltip_font_color = #OOOOOO 80
-tooltip_font = sans 10
+tooltip_font = noto sans regular 11
 
 #---------------------------------------------
 # MOUSE ACTION ON TASK
