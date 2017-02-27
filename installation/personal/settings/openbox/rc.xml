@@ -1,4 +1,3 @@
-<?xml version="1.0"?>
 <openbox_config xmlns="http://openbox.org/3.4/rc" xmlns:xi="http://www.w3.org/2001/XInclude">
   <resistance>
     <strength>10</strength>
@@ -176,6 +175,17 @@
     <chainQuitKey>C-g</chainQuitKey>
     <keybind key="C-A-Left">
       <action name="GoToDesktop"/>
+    </keybind>
+    <keybind key="S-W-Pause">
+      <action name="Execute">
+        <command>oblogout</command>
+      </action>
+    </keybind>
+    <keybind key="C-A-I">
+      <action name="Execute">
+        <command>inkscape</command>
+      </action>
+      <action name="Focus"/>
     </keybind>
     <keybind key="C-A-N">
       <action name="Execute">
@@ -490,9 +500,6 @@
     <keybind key="A-n">
       <action name="Execute">
         <command>variety -n</command>
-        <startupnotify>
-          <enabled>yes</enabled>
-        </startupnotify>
       </action>
     </keybind>
     <keybind key="A-Up">
@@ -508,41 +515,26 @@
     <keybind key="A-Right">
       <action name="Execute">
         <command>variety -n</command>
-        <startupnotify>
-          <enabled>yes</enabled>
-        </startupnotify>
       </action>
     </keybind>
     <keybind key="A-p">
       <action name="Execute">
         <command>variety -p</command>
-        <startupnotify>
-          <enabled>yes</enabled>
-        </startupnotify>
       </action>
     </keybind>
     <keybind key="A-Left">
       <action name="Execute">
         <command>variety -p</command>
-        <startupnotify>
-          <enabled>yes</enabled>
-        </startupnotify>
       </action>
     </keybind>
     <keybind key="A-f">
       <action name="Execute">
         <command>variety -f</command>
-        <startupnotify>
-          <enabled>yes</enabled>
-        </startupnotify>
       </action>
     </keybind>
     <keybind key="A-t">
       <action name="Execute">
         <command>variety -t</command>
-        <startupnotify>
-          <enabled>yes</enabled>
-        </startupnotify>
       </action>
     </keybind>
     <keybind key="W-d">
@@ -558,6 +550,11 @@
     </keybind>
     <keybind key="S-W-r">
       <action name="Reconfigure"/>
+    </keybind>
+    <keybind key="C-A-G">
+      <action name="Execute">
+        <command>gimp</command>
+      </action>
     </keybind>
   </keyboard>
   <mouse>

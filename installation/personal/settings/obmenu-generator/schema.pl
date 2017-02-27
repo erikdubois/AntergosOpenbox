@@ -31,9 +31,10 @@ my $editor = $CONFIG->{editor};
 our $SCHEMA = [
 
     #          COMMAND                 LABEL                ICON
-    {item => ['nemo',        	'File Manager',      'file-manager']},
+    {item => ['nemo',        		'File Manager',      'file-manager']},
     {item => ['gnome-terminal',     'Terminal',          'terminal']},
-    {item => ['xdg-open http://',  	'Firefox',       	'firefox']},
+    {item => ['xdg-open http://',  	'Firefox',       	 'firefox']},
+    {item => ['nemo --quit',        'Kill Nemo',         'file-manager']},
     #{item => ['gmrun',             'Run command',       'system-run']},
 
     {sep => 'Categories'},
@@ -69,14 +70,30 @@ our $SCHEMA = [
     #{sep       => undef},
     #{obgenmenu => ['Openbox Settings', 'openbox']},
     #{sep       => undef},
+    
+    {sep => undef},
+   	# Customize
+    {begin_cat => ['Customize', 'theme']},
+       	# Configuration files
+        {item => ["$editor ~/.config/conky/conky.conf",  'conky.conf',  'text-x-source']},
+        {sep => undef},
+        {item => ['lxappearance',  'Lxappearance','theme']},
+        {item => ['obconf',  'obconf', 'obconf']},
+        {sep => undef},
+        {item => ["$editor ~/.config/tint2/tint2rc", 'Tint2rc', 'text-x-source']},
+        {item => ['tint2',  'start tint2', 'tint2']},
+        {item => ['tint2conf',  'tint2conf', 'tint2conf']},
+        {sep => undef},
+        {item => ['obkey',  'Keyboard Shorcuts', 'keyboard']},
+        {sep => undef},
+        {item => ["$editor ~/.config/compton.conf",  'Compton config', 'compton']},
+    {end_cat => undef},
+
 
     ## Custom advanced settings
     {sep => undef},
     {begin_cat => ['Advanced Settings', 'gnome-settings']},
 
-        # Configuration files
-        {item => ["$editor ~/.config/conky/conky.conf",              'conky.conf',    'text-x-source']},
-        #{item => ["$editor ~/.config/tint2/tint2rc", 'Tint2 Panel', 'text-x-source']},
 
         # obmenu-generator category
         {begin_cat => ['Obmenu-Generator', 'menu-editor']},
@@ -101,6 +118,7 @@ our $SCHEMA = [
             {item => ["$editor ~/.config/openbox/menu.xml",  'Openbox Menu',        'text-xml']},
         {end_cat => undef},
 
+      
     {end_cat => undef},
     {sep => undef},
 
@@ -108,8 +126,8 @@ our $SCHEMA = [
     #{item => ['xscreensaver-command -lock', 'Lock', 'lock']},
 
     ## This option uses the default Openbox's action "Exit"
-    {exit => ['Exit', 'exit']},
+    #{exit => ['Exit', 'exit']},
 
     ## This uses the 'oblogout' menu
-    # {item => ['oblogout', 'Exit', 'exit']},
+    {item => ['oblogout', 'Exit Openbox', 'exit']},
 ]
