@@ -21,8 +21,8 @@ sudo pacman -S obkey --needed --noconfirm
 sudo pacman -S notify-osd --needed --noconfirm
 sudo pacman -S oblogout --needed --noconfirm
 sudo pacman -S obconf --needed --noconfirm
-
-
+sudo pacman -S orage --needed --noconfirm
+sudo pacman -S numlockx --needed --noconfirm
 
 
 echo "################################################################"
