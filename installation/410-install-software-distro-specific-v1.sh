@@ -17,47 +17,11 @@ echo "################################################################"
 
 
 sudo pacman -S obmenu --needed --noconfirm
+sudo pacman -S obkey --needed --noconfirm
 sudo pacman -S notify-osd --needed --noconfirm
+sudo pacman -S oblogout --needed --noconfirm
+sudo pacman -S obconf --needed --noconfirm
 
-
-echo "################################################################"
-echo "obconf"   
-echo "################################################################"
-
-
-package="obconf"
-
-#----------------------------------------------------------------------------------
-
-#checking if application is already installed or else install with aur helpers
-if pacman -Qi $package &> /dev/null; then
-
-	echo "################################################################"
-	echo "################## "$package" is already installed"
-	echo "################################################################"
-
-else
-
-	#checking which helper is installed
-	if pacman -Qi packer &> /dev/null; then
-
-		echo "Installing with packer"
-		packer -S --noconfirm --noedit  $package
-
-	elif pacman -Qi pacaur &> /dev/null; then
-		
-		echo "Installing with pacaur"
-		pacaur -S --noconfirm --noedit  $package
-		 	
-	elif pacman -Qi yaourt &> /dev/null; then
-
-		echo "Installing with yaourt"
-		yaourt -S --noconfirm $package
-			  	
-	fi
-
-
-fi
 
 
 
@@ -145,46 +109,6 @@ fi
 
 
 
-
-
-echo "################################################################"
-echo "obkey"   
-echo "################################################################"
-
-
-package="obkey"
-
-#----------------------------------------------------------------------------------
-
-#checking if application is already installed or else install with aur helpers
-if pacman -Qi $package &> /dev/null; then
-
-	echo "################################################################"
-	echo "################## "$package" is already installed"
-	echo "################################################################"
-
-else
-
-	#checking which helper is installed
-	if pacman -Qi packer &> /dev/null; then
-
-		echo "Installing with packer"
-		packer -S --noconfirm --noedit  $package
-
-	elif pacman -Qi pacaur &> /dev/null; then
-		
-		echo "Installing with pacaur"
-		pacaur -S --noconfirm --noedit  $package
-		 	
-	elif pacman -Qi yaourt &> /dev/null; then
-
-		echo "Installing with yaourt"
-		yaourt -S --noconfirm $package
-			  	
-	fi
-
-
-fi
 
 
 
@@ -435,7 +359,7 @@ else
 fi
 
 
-was not installed in Antergos
+
 
 echo "################################################################"
 echo "archlinux-xdg-menu"   
@@ -763,6 +687,50 @@ else
 
 
 fi
+
+
+
+
+
+echo "################################################################"
+echo "tint2"
+echo "################################################################"
+
+
+package="tint2"
+
+#----------------------------------------------------------------------------------
+
+#checking if application is already installed or else install with aur helpers
+if pacman -Qi $package &> /dev/null; then
+
+	echo "################################################################"
+	echo "################## "$package" is already installed"
+	echo "################################################################"
+
+else
+
+	#checking which helper is installed
+	if pacman -Qi packer &> /dev/null; then
+
+		echo "Installing with packer"
+		packer -S --noconfirm --noedit  $package
+
+	elif pacman -Qi pacaur &> /dev/null; then
+		
+		echo "Installing with pacaur"
+		pacaur -S --noconfirm --noedit  $package
+		 	
+	elif pacman -Qi yaourt &> /dev/null; then
+
+		echo "Installing with yaourt"
+		yaourt -S --noconfirm $package
+			  	
+	fi
+
+
+fi
+
 
 
 echo "################################################################"
