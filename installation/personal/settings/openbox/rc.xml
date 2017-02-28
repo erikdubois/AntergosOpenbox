@@ -1,4 +1,3 @@
-<?xml version="1.0"?>
 <openbox_config xmlns="http://openbox.org/3.4/rc" xmlns:xi="http://www.w3.org/2001/XInclude">
   <resistance>
     <strength>10</strength>
@@ -197,6 +196,7 @@
       <action name="Execute">
         <command>subl3</command>
       </action>
+      <action name="Focus"/>
     </keybind>
     <keybind key="W-KP_7">
       <action name="UnmaximizeFull"/>
@@ -412,6 +412,16 @@
         <command>virtualbox</command>
       </action>
     </keybind>
+    <keybind key="W-F9">
+      <action name="Execute">
+        <command>evolution</command>
+      </action>
+    </keybind>
+    <keybind key="C-A-S">
+      <action name="Execute">
+        <command>spotify</command>
+      </action>
+    </keybind>
     <keybind key="C-A-C">
       <action name="Execute">
         <command>catfish</command>
@@ -541,9 +551,6 @@
     <keybind key="W-d">
       <action name="Execute">
         <command>dmenu_run -fn 'NotoMonoRegular:bold:pixelsize=18'</command>
-        <startupnotify>
-          <enabled>yes</enabled>
-        </startupnotify>
       </action>
     </keybind>
     <keybind key="W-F11">
