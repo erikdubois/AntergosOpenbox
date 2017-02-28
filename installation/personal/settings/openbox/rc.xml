@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <openbox_config xmlns="http://openbox.org/3.4/rc" xmlns:xi="http://www.w3.org/2001/XInclude">
   <resistance>
     <strength>10</strength>
@@ -40,7 +41,7 @@
   </placement>
   <theme>
     <name>Arc-Dark</name>
-    <titleLayout>LIMSC</titleLayout>
+    <titleLayout>LIMSDC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -57,7 +58,7 @@
       <name>Noto Sans</name>
       <size>12</size>
       <!-- font size in points -->
-      <weight>Normal</weight>
+      <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
       <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
@@ -73,7 +74,7 @@
     </font>
     <font place="MenuHeader">
       <name>Noto Mono</name>
-      <size>12</size>
+      <size>13</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -82,7 +83,7 @@
     </font>
     <font place="MenuItem">
       <name>Noto Sans</name>
-      <size>12</size>
+      <size>13</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->

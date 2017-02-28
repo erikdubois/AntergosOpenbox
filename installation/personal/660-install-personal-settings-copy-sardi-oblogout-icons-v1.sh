@@ -12,9 +12,11 @@ set -e
 ##################################################################################################################
 
 
-echo "Copy/pasting compton.conf"
+echo "oblogout changing icon theme from oxygen to foom "
 
-cp settings/compton/compton.conf ~/.config/
+# changing the theme to random so you can enjoy tons of themes.
+
+cp -r settings/sardi-oblogout ~/.themes
 
 
 echo "################################################################"
