@@ -16,7 +16,9 @@ echo "######      from qwerty to azerty  and numeric    ##############"
 echo "################################################################"
 
 
-setxkbmap -model pc101 -layout be
+# necessary ?? 
+# tell it to go to keyboard be and have a numeric keyboard on the right side
+#setxkbmap -model pc101 -layout be
 
 
 
