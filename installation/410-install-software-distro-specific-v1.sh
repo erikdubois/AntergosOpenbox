@@ -446,44 +446,44 @@ fi
 
 
 
-echo "################################################################"
-echo "xfce4-panel"
-echo "################################################################"
+# echo "################################################################"
+# echo "xfce4-panel"
+# echo "################################################################"
 
 
-package="xfce4-panel"
+# package="xfce4-panel"
 
-#----------------------------------------------------------------------------------
+# #----------------------------------------------------------------------------------
 
-#checking if application is already installed or else install with aur helpers
-if pacman -Qi $package &> /dev/null; then
+# #checking if application is already installed or else install with aur helpers
+# if pacman -Qi $package &> /dev/null; then
 
-	echo "################################################################"
-	echo "################## "$package" is already installed"
-	echo "################################################################"
+# 	echo "################################################################"
+# 	echo "################## "$package" is already installed"
+# 	echo "################################################################"
 
-else
+# else
 
-	#checking which helper is installed
-	if pacman -Qi packer &> /dev/null; then
+# 	#checking which helper is installed
+# 	if pacman -Qi packer &> /dev/null; then
 
-		echo "Installing with packer"
-		packer -S --noconfirm --noedit  $package
+# 		echo "Installing with packer"
+# 		packer -S --noconfirm --noedit  $package
 
-	elif pacman -Qi pacaur &> /dev/null; then
+# 	elif pacman -Qi pacaur &> /dev/null; then
 		
-		echo "Installing with pacaur"
-		pacaur -S --noconfirm --noedit  $package
+# 		echo "Installing with pacaur"
+# 		pacaur -S --noconfirm --noedit  $package
 		 	
-	elif pacman -Qi yaourt &> /dev/null; then
+# 	elif pacman -Qi yaourt &> /dev/null; then
 
-		echo "Installing with yaourt"
-		yaourt -S --noconfirm $package
+# 		echo "Installing with yaourt"
+# 		yaourt -S --noconfirm $package
 			  	
-	fi
+# 	fi
 
 
-fi
+# fi
 
 
 
