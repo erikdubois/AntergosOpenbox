@@ -33,7 +33,7 @@ our $SCHEMA = [
     #          COMMAND                 LABEL                ICON
     {item => ['nemo',        		'File Manager',      'file-manager']},
     {item => ['gnome-terminal',     'Terminal',          'terminal']},
-    {item => ['xdg-open http://',  	'Firefox',       	 'firefox']},
+    {item => ['firefox',  	'Firefox',       	 'firefox']},
     {item => ['nemo --quit',        'Kill Nemo',         'xkill-openbox']},
     #{item => ['gmrun',             	'Run command',       'system-run']},
 
@@ -44,8 +44,7 @@ our $SCHEMA = [
 
         # Customize
         {begin_cat => ['Customize', 'theme']},
-            # Configuration files
-            {item => ["$editor ~/.config/compton.conf",  'Compton config', 'compton']},
+            {item => ['gpick',  'Gpick','gpick']},
             {sep => undef},
             {item => ["$editor ~/.config/conky/conky.conf",  'conky.conf',  'text-x-source']},
             {sep => undef},
@@ -56,7 +55,9 @@ our $SCHEMA = [
             #{item => ['tint2 &',  'start tint2', 'tint2']},
             {item => ['tint2conf',  'tint2conf', 'tint2conf']},
             {sep => undef},
-            {item => ['obkey',  'Keyboard Shorcuts', 'keyboard']},                  
+            {item => ['obkey',  'Keyboard Shorcuts', 'keyboard']},
+            {sep => undef},
+            {item => ["$editor ~/.config/compton.conf",  'Compton config', 'compton']},              
         {end_cat => undef},
 
         # Openbox category
