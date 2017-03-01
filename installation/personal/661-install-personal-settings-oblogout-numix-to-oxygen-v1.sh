@@ -18,8 +18,9 @@ echo "oblogout changing icon theme from foom to oxygen "
 
 sudo sed -i 's/buttontheme = Numix/buttontheme = oxygen/g' /etc/oblogout.conf
 
+echo "################################################################"
+echo "#########     oblogout.conf has been changed    ################"
+echo "################################################################"
 
-echo "################################################################"
-echo "#########     compton.conf has been copied      ################"
-echo "################################################################"
+
 

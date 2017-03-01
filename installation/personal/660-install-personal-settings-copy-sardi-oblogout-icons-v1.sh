@@ -20,6 +20,8 @@ cp -r settings/sardi-oblogout ~/.themes
 
 
 echo "################################################################"
-echo "#########     compton.conf has been copied      ################"
+echo "#########     oblogout theme has been copied    ################"
 echo "################################################################"
+
+
 

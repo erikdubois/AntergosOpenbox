@@ -20,6 +20,8 @@ sudo sed -i 's/buttontheme = sardi-oblogout/buttontheme = oxygen/g' /etc/oblogou
 
 
 echo "################################################################"
-echo "#########     compton.conf has been copied      ################"
+echo "#########     oblogout.conf has been changed    ################"
 echo "################################################################"
+
+
 
