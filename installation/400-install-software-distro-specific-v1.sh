@@ -27,7 +27,7 @@ sudo pacman -S noto-fonts --noconfirm --needed
 sudo pacman -S nemo nemo-share nemo-fileroller --noconfirm --needed
 
 # extra extensions to compare files if needed install it
-# packer -S nemo-compare
+# packer -S nemo-compare nemo-dropbox
 
 echo "################################################################"
 echo "#########   distro specific software installed  ################"
