@@ -1,18 +1,47 @@
+####Original Antergos Configuration
+
+#nitrogen --restore &
+#volumeicon &
+#compton --config ~/.config/compton.conf -b &
+#tint2 &
+#plank &
+#conky -c ~/.config/conky.conf &
+#lxpolkit &
+
+
+#### Personal Configuration
+
+
 ##compositor
 compton --config ~/.config/compton.conf -b &
+
 
 ##volume icons
 #volumeicon &
 pasystray &
+
+
 plank &
+
 
 ##panels
 #xfce4-panel &
 tint2 &
 
+
 ##PolicyKit authentication
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 #lxpolkit &
 
+
 ## numeric keyboard on
 numlockx on
+
+
+
+
+
+
+
+
+

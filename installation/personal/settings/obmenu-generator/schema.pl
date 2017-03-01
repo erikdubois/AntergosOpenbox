@@ -31,12 +31,14 @@ my $editor = $CONFIG->{editor};
 our $SCHEMA = [
 
     #          COMMAND                 LABEL                ICON
+    #{item => ['xdg-open .',        'File Manager',      'file-manager']},
+    #{item => ['xterm',             'Terminal',          'terminal']},
+    #{item => ['xdg-open http://',  'Web Browser',       'web-browser']},
+    #{item => ['gmrun',             'Run command',       'system-run']},
     {item => ['nemo',        		'File Manager',      'file-manager']},
     {item => ['gnome-terminal',     'Terminal',          'terminal']},
     {item => ['firefox',  			'Firefox',       	 'firefox']},
     {item => ['nemo --quit',        'Kill Nemo',         'xkill-openbox']},
-    #{item => ['gmrun',             	'Run command',       'system-run']},
-
 
     ## Custom advanced settings
     {sep => undef},

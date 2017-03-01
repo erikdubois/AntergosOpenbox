@@ -73,7 +73,7 @@
 =cut
 
 our $CONFIG = {
-  "editor"              => "subl3",
+  "editor"              => "geany",
   "Linux::DesktopFiles" => {
                              desktop_files_paths     => [
                                                           "/usr/share/applications",
@@ -96,6 +96,6 @@ our $CONFIG = {
                            },
   "missing_icon"        => "gtk-missing-image",
   "name_keys"           => ["Name"],
-  "terminal"            => "gnome-terminal",
+  "terminal"            => "xterm",
   "VERSION"             => 0.69,
 }
