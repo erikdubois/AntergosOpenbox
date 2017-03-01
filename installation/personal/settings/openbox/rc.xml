@@ -74,7 +74,7 @@
     </font>
     <font place="MenuHeader">
       <name>Noto Sans</name>
-      <size>14</size>
+      <size>13</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -83,7 +83,7 @@
     </font>
     <font place="MenuItem">
       <name>Noto Sans</name>
-      <size>14</size>
+      <size>13</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->

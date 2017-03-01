@@ -33,7 +33,7 @@ our $SCHEMA = [
     #          COMMAND                 LABEL                ICON
     {item => ['nemo',        		'File Manager',      'file-manager']},
     {item => ['gnome-terminal',     'Terminal',          'terminal']},
-    {item => ['firefox',  	'Firefox',       	 'firefox']},
+    {item => ['firefox',  			'Firefox',       	 'firefox']},
     {item => ['nemo --quit',        'Kill Nemo',         'xkill-openbox']},
     #{item => ['gmrun',             	'Run command',       'system-run']},
 
