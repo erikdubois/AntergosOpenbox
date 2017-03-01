@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <openbox_config xmlns="http://openbox.org/3.4/rc" xmlns:xi="http://www.w3.org/2001/XInclude">
   <resistance>
     <strength>10</strength>
@@ -72,8 +73,8 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuHeader">
-      <name>Noto Mono</name>
-      <size>13</size>
+      <name>Noto Sans</name>
+      <size>14</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -82,7 +83,7 @@
     </font>
     <font place="MenuItem">
       <name>Noto Sans</name>
-      <size>13</size>
+      <size>14</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -120,8 +121,8 @@
     <number>2</number>
     <firstdesk>1</firstdesk>
     <names>
-      <name>desktop 1</name>
-      <name>desktop 2</name>
+      <name>&lt; 1 &gt;</name>
+      <name>&lt; 2 &gt;</name>
     </names>
     <popupTime>875</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
