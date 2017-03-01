@@ -73,7 +73,7 @@
     </font>
     <font place="MenuHeader">
       <name>Noto Sans</name>
-      <size>12</size>
+      <size>13</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -82,7 +82,7 @@
     </font>
     <font place="MenuItem">
       <name>Noto Sans</name>
-      <size>12</size>
+      <size>13</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -175,6 +175,11 @@
     <chainQuitKey>C-g</chainQuitKey>
     <keybind key="C-A-Left">
       <action name="GoToDesktop"/>
+    </keybind>
+    <keybind key="C-A-V">
+      <action name="Execute">
+        <command>vivaldi-stable</command>
+      </action>
     </keybind>
     <keybind key="S-W-Pause">
       <action name="Execute">
