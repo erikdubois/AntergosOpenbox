@@ -4,7 +4,11 @@
 
 All information about the installation and customization of Antergos Openbox can be found in this **article** and is explained in **several youtube tutorials** : 
 
-http://erikdubois.be/how-to-install-openbox-on-antergos-and-customize-it/
+Detailed version
+http://erikdubois.be/how-to-install-openbox-on-antergos-and-customize-it/ 
+
+Quick installation version
+http://erikdubois.be/how-to-quickly-install-openbox-on-antergos-and-customize-it/
 
 Official antergos downloads can be found at 
 http://antergos.com/try-it/
