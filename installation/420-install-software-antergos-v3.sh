@@ -21,7 +21,8 @@ echo "################################################################"
 ## sudo pacman -S ttf-droid --noconfirm --noconfirm --needed  conflicts with ttf-google-fonts
 ## sudo pacman -S ttf-inconsolata --noconfirm --needed        conflicts with ttf-google-fonts
 sudo pacman -S noto-fonts --noconfirm --needed
-sudo pacman -S ttf-roboto --noconfirm --needed
+# conflicts with ttf-google-fonts
+#sudo pacman -S ttf-roboto --noconfirm --needed
 
 #file manager
 
