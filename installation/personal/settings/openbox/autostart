@@ -31,13 +31,12 @@ tint2 &
 
 ##PolicyKit authentication
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-#lxpolkit &
 
 
 ## numeric keyboard on
 numlockx on
 
-
+conky &
 
 
 

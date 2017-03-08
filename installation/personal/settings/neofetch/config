@@ -532,7 +532,7 @@ disk_display="off"
 # Default:  'ascii'
 # Values:   'ascii', 'caca', 'catimg', 'jp2a', 'iterm2', 'off', 'tycat', 'w3m'
 # Flag:     --backend
-image_backend="w3m"
+image_backend="ascii"
 
 # Image Source
 #
@@ -547,7 +547,7 @@ image_backend="w3m"
 #       wallpaper will be used.
 #image_source="/home/erik/.config/neofetch/al4.png"
 image_source="/home/erik/.config/neofetch/powered-by-archlinux.png"
-
+#image_source='auto'
 
 # Ascii Options
 
@@ -604,7 +604,7 @@ thumbnail_dir="${XDG_CACHE_HOME:-${HOME}/.cache}/thumbnails/neofetch"
 #
 # See this wiki page to learn about the fit and fill options.
 # https://github.com/dylanaraps/neofetch/wiki/What-is-Waifu-Crop%3F
-#crop_mode="normal"
+crop_mode="normal"
 
 # Crop offset
 # Note: Only affects 'normal' crop mode.
@@ -613,7 +613,7 @@ thumbnail_dir="${XDG_CACHE_HOME:-${HOME}/.cache}/thumbnails/neofetch"
 # Values:   'northwest', 'north', 'northeast', 'west', 'center'
 #           'east', 'southwest', 'south', 'southeast'
 # Flag:     --crop_offset
-#crop_offset="center"
+crop_offset="center"
 
 # Image size
 # The image is half the terminal width by default.
@@ -638,7 +638,7 @@ gap=3
 # Values:  'px'
 # Flags:   --xoffset
 #          --yoffset
-yoffset=150
+yoffset=50
 xoffset=20
 
 # Image background color
