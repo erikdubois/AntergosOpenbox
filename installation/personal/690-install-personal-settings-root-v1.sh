@@ -16,15 +16,18 @@ echo "#########          root files                   ################"
 echo "################################################################"
 
 
+cp settings/root/.bashrc ~/
+cp settings/root/.bash_profile ~/
 
-#cp settings/.bashrc ~/
-#cp settings/.gtkrc-2.0 ~/
-#cp settings/.xinitrc ~/
-#cp settings/.zlogin ~/
-#cp settings/.zshrc ~/
-#cp settings/bookmarks ~/.config/gtk-3.0/
-#cp settings/settings.ini ~/.config/gtk-3.0/
-#cp settings/sublimetext/* ~/.config/sublime-text-3/Packages/User/
+#in other folder
+#cp settings/root/.gtkrc-2.0 ~/
+
+
+#cp settings/root/.xinitrc ~/
+cp settings/root/.zlogin ~/
+cp settings/root/.zshrc ~/
+
+
 
 
 

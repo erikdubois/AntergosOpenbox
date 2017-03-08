@@ -9,7 +9,7 @@ set -e
 #======================================================================================
 
 echo "################################################################"
-echo "####             Installing reflector                       ####"
+echo "####             Installing reflector                        ###"
 echo "################################################################"
 
 
@@ -18,7 +18,7 @@ sudo pacman -S --noconfirm --needed reflector
 
 
 echo "################################################################"
-echo "####         finding fastest servers - worldwide            ####"
+echo "####   finding fastest servers be patient for the world      ###"
 echo "################################################################"
 
 # finding the fastest archlinux servers
@@ -27,7 +27,7 @@ sudo reflector -l 100 -f 50 --sort rate --threads 5 --verbose --save /tmp/mirror
 
 
 echo "################################################################"
-echo "####                  fastest servers  saved                ####"
+echo "####       fastest servers  saved                            ###"
 echo "################################################################"
 
 
@@ -37,7 +37,7 @@ echo "################################################################"
 echo "####              Checking for possible updates             ####"
 echo "################################################################"
 
-sudo pacman -Syu
+sudo pacman -Syu --noconfirm
 
 
 echo "################################################################"

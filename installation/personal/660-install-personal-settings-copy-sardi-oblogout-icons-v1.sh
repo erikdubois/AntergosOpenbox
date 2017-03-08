@@ -11,6 +11,7 @@ set -e
 #
 ##################################################################################################################
 
+[ -d $HOME"/.themes" ] || mkdir -p $HOME"/.themes"
 
 echo "oblogout changing icon theme from oxygen to foom "
 
