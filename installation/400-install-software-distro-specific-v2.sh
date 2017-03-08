@@ -38,15 +38,18 @@ sudo pacman -S nemo nemo-fileroller --noconfirm --needed
 sudo pacman -S arandr --needed --noconfirm
 sudo pacman -S compton --needed --noconfirm
 sudo pacman -S dmenu --needed --noconfirm
+sudo pacman -S exo --needed --noconfirm
 sudo pacman -S geany --needed --noconfirm
 sudo pacman -S feh --needed --noconfirm
 sudo pacman -S gmrun --needed --noconfirm
 sudo pacman -S gsimplecal --needed --noconfirm
+sudo pacman -S lightdm --needed --noconfirm
 sudo pacman -S lxinput --needed --noconfirm
 sudo pacman -S lxrandr --needed --noconfirm
 sudo pacman -S nitrogen --needed --noconfirm
 sudo pacman -S notify-osd --needed --noconfirm
 sudo pacman -S numlockx --needed --noconfirm
+sudo pacman -S openbox --needed --noconfirm
 sudo pacman -S obconf --needed --noconfirm
 sudo pacman -S obmenu --needed --noconfirm
 sudo pacman -S oblogout --needed --noconfirm
@@ -121,7 +124,7 @@ fi
 
 
 
-
+sudo pacman -R obkey --confirm
 
 
 
