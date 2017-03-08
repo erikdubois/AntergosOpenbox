@@ -45,7 +45,7 @@ sudo pacman -S opera --needed --noconfirm
 sudo pacman -S sakura --needed --noconfirm
 #sudo pacman -S termite --needed --noconfirm
 sudo pacman -S urxvt-perls --needed --noconfirm
-sudo pacman -S viewnior --needed --noconfirm
+#sudo pacman -S viewnior --needed --noconfirm
 sudo pacman -S xfburn --needed --noconfirm
 sudo pacman -S xfce4-appfinder --needed --noconfirm
 sudo pacman -S xfce4-notifyd --needed --noconfirm
@@ -55,59 +55,59 @@ sudo pacman -S xfce4-settings --needed --noconfirm
 sudo pacman -S xorg-xkill --needed --noconfirm
 
 #octopi is giving problems
-sh install-pamac-aur-v1.sh
+#sh install-pamac-aur-v1.sh
 
 
 
 
 
-package="gigolo"
+# package="gigolo"
 
-#----------------------------------------------------------------------------------
+# #----------------------------------------------------------------------------------
 
-#checking if application is already installed or else install with aur helpers
-if pacman -Qi $package &> /dev/null; then
+# #checking if application is already installed or else install with aur helpers
+# if pacman -Qi $package &> /dev/null; then
 
-	echo "################################################################"
-	echo "################## "$package" is already installed"
-	echo "################################################################"
+# 	echo "################################################################"
+# 	echo "################## "$package" is already installed"
+# 	echo "################################################################"
 
-else
+# else
 
-	#checking which helper is installed
-	if pacman -Qi packer &> /dev/null; then
+# 	#checking which helper is installed
+# 	if pacman -Qi packer &> /dev/null; then
 
-		echo "Installing with packer"
-		packer -S --noconfirm --noedit  $package
+# 		echo "Installing with packer"
+# 		packer -S --noconfirm --noedit  $package
 
-	elif pacman -Qi pacaur &> /dev/null; then
+# 	elif pacman -Qi pacaur &> /dev/null; then
 		
-		echo "Installing with pacaur"
-		pacaur -S --noconfirm --noedit  $package
+# 		echo "Installing with pacaur"
+# 		pacaur -S --noconfirm --noedit  $package
 		 	
-	elif pacman -Qi yaourt &> /dev/null; then
+# 	elif pacman -Qi yaourt &> /dev/null; then
 
-		echo "Installing with yaourt"
-		yaourt -S --noconfirm $package
+# 		echo "Installing with yaourt"
+# 		yaourt -S --noconfirm $package
 			  	
-	fi
+# 	fi
 
-	# Just checking if installation was successful
-	if pacman -Qi $package &> /dev/null; then
+# 	# Just checking if installation was successful
+# 	if pacman -Qi $package &> /dev/null; then
 	
-	echo "################################################################"
-	echo "#########  "$package" has been installed"
-	echo "################################################################"
+# 	echo "################################################################"
+# 	echo "#########  "$package" has been installed"
+# 	echo "################################################################"
 
-	else
+# 	else
 
-	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-	echo "!!!!!!!!!  "$package" has NOT been installed"
-	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+# 	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+# 	echo "!!!!!!!!!  "$package" has NOT been installed"
+# 	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 
-	fi
+# 	fi
 
-fi
+# fi
 
 
 
