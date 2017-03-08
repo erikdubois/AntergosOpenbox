@@ -59,8 +59,8 @@ sudo pacman -S xorg-xkill --needed --noconfirm
 
 
 #octopi is giving problems
-sh install-pamac-aur-v1.sh
-
+#sh install-pamac-aur-v1.sh
+sudo pacman -S pamac --needed --noconfirm
 
 
 
