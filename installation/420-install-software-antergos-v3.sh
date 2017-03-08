@@ -41,7 +41,7 @@ sudo pacman -S gnumeric --needed --noconfirm
 sudo pacman -S gtk-recordmydesktop --needed --noconfirm
 sudo pacman -S libreoffice --needed --noconfirm
 sudo pacman -S lightdm-gtk-greeter-settings --needed --noconfirm
-sudo pacman -S lx-terminal --needed --noconfirm
+sudo pacman -S lxterminal --needed --noconfirm
 sudo pacman -S opera --needed --noconfirm
 sudo pacman -S sakura --needed --noconfirm
 #sudo pacman -S termite --needed --noconfirm
